@@ -1,0 +1,67 @@
+.wrapper {
+  background: url("../../assets/quizstart.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper h1 {
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-top: 2rem;
+}
+.start{
+  text-decoration: none;
+}
+.dateTime {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1rem;
+  font-size: 1.4rem;
+}
+.dateTime span {
+  color: white;
+  margin-left: 2rem;
+}
+.startBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Adjust the button to center it */
+  padding: 1rem 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.startBtn:hover {
+  background-color: green;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    background-color: #cdceeb;
+    /* background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  }
+  .dateTime {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    justify-content: justify;
+  }
+  .startBtn {
+    background-color: yellow;
+  }
+}

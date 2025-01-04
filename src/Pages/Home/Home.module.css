@@ -1,0 +1,68 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    position: absolute;
+    top: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:yellow;
+    font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  
+}
+.main_container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+}
+.wrapper {
+    background: url('../../assets/quizBackgroun.jpg');
+    display: flex;
+    height: 100vh; 
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.wrapper nav{
+    font-size: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 1rem;
+    color: #f7f7f7;
+}
+.link{
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+
+@media screen and (max-width:700px) {
+    .wrapper{
+        flex-direction: column;
+        max-height: 100vh;
+        position: fixed;
+        width: 100%;
+    
+    }
+    .link{
+        text-decoration: none;
+        color: #f7f7f7;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    .wrapper nav{
+        margin-bottom:5rem ;
+       width: 60%;
+       font-size: 2rem;
+       text-align: center;
+       text-decoration: none;
+    }
+}
